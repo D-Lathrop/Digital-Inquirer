@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <title>Digital Inquirer - Home</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="The home page of the Digital Inquirer website.  DigiInq is your source of video game and media news, reviews, and guides.">
+        <meta name="author" content="Daniel Lathrop">
+        <link rel="stylesheet" href="">
+    </head>
+<!-- Intended Features:
+    News and Review Tabs, cause videos to pause if the tab isn't on top
+    Search Function
+    Print Styles
+    SASS Mixins and Nesting
+    Tags
+    Font Size settings
+    Home page and news page filters
+    Time Element (publicatoin date etc)
+
+
+    Accounts
+        API: Content Security Poicy
+        API: Referrer Policy
+        API: Web Cryptography - Use with accounts
+        API: IndexDB for accounts etc?
+    Add a link that opens as a new tab to the terms and conditions on the account registration page.
+    Likes
+    Favorites
+    Favorites filters
+    History
+    History filters
+    Follow topics, authors, accounts, etc.
+    Update notifications
+    Comments
+    Messaging
+    Fully Accessable
+    Check for unsupported rules
+    
+    Check Compatability:
+        <figure> and <figcaption>
+        <details> and <summary>
+        <video> and <audio>
+        API: Canvas
+        API: Web Animations
+        API: Web sockets for accounts etc?
+        Web components: 
+            Custom Elements - Use for comments
+            Shadow DOM - Low Priority
+            Templates - Maybe for forms?
+        API: Page visibility - pause videos when page not visible
+        API: Content Editable?
+        API: Drag and Drop?
+
+    Netlify
+    DataStax AstraDB *Database*
+-->
+<!--Known Bugs and Hacks:
+
+-->
+    <body>
+        <header>
+            <ul id="headerUL">
+                <li><img id="logo" src="Images/LogoCropped.png" alt="Digital Inquirer Logo - A magnifying glass looking at neon blue circuits."></li>
+                <li><a href="">Home</a></li>
+                <li><a href="">Tags</a></li>
+                <li class="justify-end dropdownMenuParent hoverDelay"><a id="loginMyAccount" href="/Account/myAccount.html">Login / My Account</a>
+                    <ul class="dropdownMenuChild">
+                        <li>Login / Sign Up</li>
+                        <li>Account Home</li>
+                        <li>Following</li>
+                        <li>Notifications and Messages</li>
+                        <li>Account Settings</li>
+                    </ul>
+                </li>
+            </ul>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="">News</a></li>
+                <li><a href="">Reviews</a></li>
+                <li><a href="">Guides</a></li>
+                <li><a href="">Merch</a></li>
+                <li><form id="searchBar">Search Bar</form></li>
+            </ul>
+        </nav>        
+        <main>
+            <section>Welcome to the Digital Inquirer</section>
+            <article></article>
+            <article></article>
+        </main>
+        <aside>Ad</aside>
+        <footer>Footer</footer>
+
+    </body>
+</html>

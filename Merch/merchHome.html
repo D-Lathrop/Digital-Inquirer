@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <title>Digital Inquirer - Home</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+        content="The home page of the Digital Inquirer website.  DigiInq is your source of video game and media news, reviews, and guides.">
+    <meta name="author" content="Daniel Lathrop">
+    <link rel="stylesheet" href="/SASS/styles.css">
+    <script src="/JS/Open Layers v8.1.0-package/dist/ol.js"></script>
+</head>
+
+<body class="darkModeChange">
+    <div class="toast-container" id="toast">
+    </div>
+    <header class="darkModeChange">
+        <ul id="headerUL">
+            <li><img id="logo" src="/Images/LogoCropped.png"
+                    alt="Digital Inquirer Logo - A magnifying glass looking at neon blue circuits."></li>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/Tags/tagsHome.html">Tags</a></li>
+            <li><button class="darkModeChange" id="darkModeToggleButton" type="button"><img id="darkModeToggleIMG"
+                        src="/Images/Moon_Icon.png" alt="Dark Mode Toggle Button"></button></li>
+            <li id="loginMenuHover" class="justify-end dropdownMenuParent hoverDelay"><a href="#">Login / My Account</a>
+                <ul id="loginMenu" class="dropdownMenuChild">
+                    <li>Login / Sign Up</li>
+                    <li><a href="/Account/myAccount.html">Account Home</a></li>
+                    <li>Following</li>
+                    <li>Notifications and Messages</li>
+                    <li>Account Settings</li>
+                </ul>
+            </li>
+        </ul>
+    </header>
+    <nav class="darkModeChange">
+        <button id="hamburgerBTN" class="buttonHide">&#9776;</button>
+        <ul id="navOpen" class="navClosed">
+            <li><a href="/News/newsHome.html">News</a></li>
+            <li><a href="/Reviews/reviewsHome.html">Reviews</a></li>
+            <li><a href="/Guides/guidesHome.html">Guides</a></li>
+            <li><a href="merchHome.html">Merch</a></li>
+            <li>
+                <form id="searchBar">Search Bar</form>
+            </li>
+        </ul>
+    </nav>
+    <main class="darkModeChange">
+        <h1>Welcome to our Merch page</h1>
+        <section id="merchSection">
+            <div>
+                <figure class="merchCard">
+                    <img src="/Images/merchImg1.png" alt="A photo of Digital Inquirer's merch item.">
+                    <figcaption>
+                        <h2>Exclusive Gaming Mouse</h2>
+                        <p>Elevate your gaming experience with our high-performance gaming mouse. Designed for precision and comfort, it's a must-have for every gamer.</p>
+                        <p>Price: $49.99</p>
+                        <p>Qty: <button type="button">+</button><span class="merchButtonField">0</span><button type="button">-</button></p>
+                    </figcaption>
+                </figure>
+            </div>
+            <div>
+                <figure class="merchCard">
+                    <img src="/Images/merchImg2.png" alt="A photo of Digital Inquirer's merch item.">
+                    <figcaption>
+                        <h2>Anime-Inspired T-Shirt</h2>
+                        <p>Show off your love for anime with this stylish t-shirt featuring iconic characters and vibrant colors. Available in various sizes.</p>
+                        <p>Price: $24.99</p>
+                        <p>Qty: <button type="button">+</button><span class="merchButtonField">0</span><button type="button">-</button></p>
+                    </figcaption>
+                </figure>
+            </div>
+            <div>
+                <figure class="merchCard">
+                    <img src="/Images/merchImg3.png" alt="A photo of Digital Inquirer's merch item.">
+                    <figcaption>
+                        <h2>Movie Poster Collection</h2>
+                        <p>Decorate your room with our collection of classic movie posters. From sci-fi to fantasy, choose your favorites and relive cinematic moments.</p>
+                        <p>Price: $19.99 each</p>
+                        <p>Qty: <button type="button">+</button><span class="merchButtonField">0</span><button type="button">-</button></p>
+                    </figcaption>
+                </figure>
+            </div>
+            <div>
+                <figure class="merchCard">
+                    <img src="/Images/merchImg4.png" alt="A photo of Digital Inquirer's merch item.">
+                    <figcaption>
+                        <h2>Collector's Edition Game</h2>
+                        <p>Get the ultimate gaming experience with the collector's edition of your favorite game. Includes exclusive in-game items and artwork.</p>
+                        <p>Price: $79.99</p>
+                        <p>Qty: <button type="button">+</button><span class="merchButtonField">0</span><button type="button">-</button></p>
+                    </figcaption>
+                </figure>
+            </div>
+            <div>
+                <figure class="merchCard">
+                    <img src="/Images/merchImg5.png" alt="A photo of Digital Inquirer's merch item.">
+                    <figcaption>
+                        <h2>Movie Buff's Blu-ray Set</h2>
+                        <p>Expand your movie collection with this special Blu-ray set featuring critically acclaimed films and bonus features.</p>
+                        <p>Price: $59.99</p>
+                        <p>Qty: <button type="button">+</button><span class="merchButtonField">0</span><button type="button">-</button></p>
+                    </figcaption>
+                </figure>
+            </div>
+            <div>
+                <figure class="merchCard">
+                    <img src="/Images/merchImg6.png" alt="A photo of Digital Inquirer's merch item.">
+                    <figcaption>
+                        <h2>Anime Artbook</h2>
+                        <p>Immerse yourself in the world of anime with this beautifully illustrated artbook. Explore concept art and character designs.</p>
+                        <p>Price: $29.99</p>
+                        <p>Qty: <button type="button">+</button><span class="merchButtonField">0</span><button type="button">-</button></p>
+                    </figcaption>
+                </figure>
+            </div>
+        </section>
+    </main>
+    <aside class="darkModeChange">Ad</aside>
+    <footer>
+        <section id="footerContent">
+            <div>
+                <h3>About Us</h3>
+                <p>This is a demo website. Digital Inquirer is not a real media organization.</p>
+                <p>Address: Shanghai Tower, Lujiazui, Pudong New District, Shanghai, China</p>
+            </div>
+            <div>
+                <div id="map" class="map"></div>
+            </div>
+        </section>
+    </footer>
+    <script defer src="/JS/main.JS" type="module"></script>
+</body>
+
+</html>

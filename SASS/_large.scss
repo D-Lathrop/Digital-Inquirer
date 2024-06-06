@@ -1,0 +1,81 @@
+//Grid Rules
+body {
+    display: grid;
+    grid-template-rows: [header-start] min-content [header-end nav-start main-start aside-start] auto [nav-end main-end aside-end footer-start] min-content [footer-end];
+    grid-template-columns: repeat(12, 1fr);
+}
+
+header,
+footer {
+    grid-column: 1/13;
+}
+
+nav {
+    grid-column: 1/3;
+}
+
+main {
+    grid-column: 3/11;
+}
+
+aside {
+    grid-column: 11/13;
+}
+
+header {
+    grid-row: header-start / header-end;
+}
+
+nav,
+main,
+aside {
+    grid-row: main-start / main-end;
+}
+
+footer {
+    grid-row: footer-start / footer-end;
+}
+
+// Styles
+header>ul>li>a,
+header>ul>li {
+    margin: 3px;
+    padding: 2px 6px;
+    font-size: 30px;
+}
+
+#footerContent {
+    display: grid;
+    grid-template-rows: min-content;
+    grid-template-columns: auto 40%;
+}
+
+// body {
+//     display: grid;
+//     grid-template-columns: 15em auto 15em;
+//     grid-template-rows: min-content auto min-content;
+// }
+
+
+
+// Grid Properties
+// grid-template-column/row= Defines how many columns of what size the grid will have, can use rem, em, px, % etc.
+//     auto= Fills available space
+//     fr= fills a fraction of remaining space, for example '1fr 1fr' would be 2 equal columns/rows
+//     Percentage= A percentage
+//     min-content= Makes the space as small as possible while fitting the content
+//     max-content= Makes the space as large as it needs to be to fit all of the content without a new line (for text)
+//     minmax= Sets a minimium size and maximum size, for example (fit-content, 50%)
+//     fit-content= Makes the space smaller than or equal to the size specified
+//     repeat(#of times to repeat, track sizes), for example repeat(12, 1fr)
+// grid-column-start= Shows where a grid element's row should start
+// grid-column-end= Shows where a grid element's row should end
+//     grid-template: rows / columns
+//     grid: rows / columns
+
+//Implicit Grid
+//  grid-auto-rows= Changes the implicit row size
+//  grid-auto-columns= Changes the implicit column size
+
+
+//Styles
